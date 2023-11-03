@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+                        
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+                        
+  <meta name="Author" content="Imi Honl@pja">
+                        
+  <meta name="GENERATOR"
+ content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+  <title>Imi Honl@pja</title>
+     
+<script language="JavaScript1.2">
+	var MNU_Cnt = 1
+
+	select_IMGs = new Array(MNU_Cnt-1);
+	unselect_IMGs = new Array(MNU_Cnt-1);
+	actual_IMGs = new Array(MNU_Cnt-1)
+
+	for (var i=0;i<MNU_Cnt;i++) {
+	  select_IMGs[i] = new Image;
+	  unselect_IMGs[i] = new Image;
+	  actual_IMGs[i] = new Image;
+	}
+
+	unselect_IMGs[0].src = "back01.gif"
+	select_IMGs[0].src = "back02.gif"
+	actual_IMGs[0].src = "back03.gif"
+
+	function MENU_Choice(N) {
+	var IMGName = "IMG" + N;
+	document[IMGName].src = select_IMGs[N].src
+	}
+
+	function MENU_UnChoice(N) {
+	window.status = "";
+	var IMGName = "IMG" + N;
+	document[IMGName].src = unselect_IMGs[N].src;
+	}
+	
+	function MENU_Akt(N) {
+	var IMGName = "IMG" + N;
+	document[IMGName].src = actual_IMGs[N].src;
+	}
+	</script>
+</head>
+ <body text="#000000" bgcolor="#ffffff" link="#0000ee" vlink="#551a8b"
+ alink="#ff0000" background="http://imihonlapja.uw.hu/alap-hatter.jpg"
+ onload="window.status='Imi Honl@pja'; return true">
+      &nbsp;      
+<center>     
+<table border="0" cellspacing="0" cellpadding="0" cols="1" width="85%"
+ height="60">
+      <tbody>
+         <tr>
+      <td valign="middle" background="http://imihonlapja.uw.hu/alapkek.gif">                     
+              
+      <center><img src="logo_eng.gif" border="0" height="56"
+ width="215" alt="Logo">
+           </center>
+      </td>
+      </tr>
+     <tr>
+       <td valign="top">       
+      <center>            
+      <p><font size="+3" color="#000066"><b><br>
+Sorry!</b></font></p>
+      <p><b><font color="#000099"><font color="#000066">The page is under
+construction! Try it later.</font><br>
+      </font></b></p>
+     </center>
+              <br>
+       </td>
+     </tr>
+                          
+  </tbody>     
+</table>
+ 
+<div align="center"><br>
+     </div>
+ </center>
+            
+<center>      
+<p><b><font color="#000099"></font></b></p>
+ </center>
+ &nbsp;      
+<p><b><font color="#ff0000"><font size="-1">&copy;Imi Honl@pja</font></font></b>
+   <br>
+     <b><font color="#000000"><font size="-1">All rights reserved</font></font></b><a
+ href="http://imihonlapja.uw.hu/index.html"
+ onmouseover="MENU_Choice(0); self.status='Back to the main page';return true"
+ onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(0);return true"><img src="back01.gif" name="IMG0"
+ border="0" width="126" height="21">
+     </a> </p>
+     <br>
+     <br>
+    <br>
+    <br>
+ <br>
+</body>
+</html>

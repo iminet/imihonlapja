@@ -1,0 +1,185 @@
+<html>
+<head>
+                                            
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+                                            
+  <meta name="GENERATOR"
+ content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+                                            
+  <meta name="Author" content="Imi Honl@pja">
+  <title>Imi Honl@pja</title>
+                                                                         
+ 
+  <script language="JavaScript1.2">
+
+
+
+
+
+var MNU_Cnt = 8
+
+select_IMGs = new Array(MNU_Cnt-1);
+unselect_IMGs = new Array(MNU_Cnt-1);
+actual_IMGs = new Array(MNU_Cnt-1)
+
+for (var i=0;i<MNU_Cnt;i++) {
+  select_IMGs[i] = new Image;
+  unselect_IMGs[i] = new Image;
+  actual_IMGs[i] = new Image;
+}
+
+unselect_IMGs[0].src = "sajat01.gif"
+select_IMGs[0].src = "sajat02.gif"
+actual_IMGs[0].src = "sajat03.gif"
+
+unselect_IMGs[1].src = "letoltes01.gif"
+select_IMGs[1].src = "letoltes02.gif"
+actual_IMGs[1].src = "letoltes03.gif"
+
+unselect_IMGs[2].src = "desktop01.gif"
+select_IMGs[2].src = "desktop02.gif"
+actual_IMGs[2].src = "desktop03.gif"
+
+unselect_IMGs[3].src = "teszt01.gif"
+select_IMGs[3].src = "teszt02.gif"
+actual_IMGs[3].src = "teszt03.gif"
+
+unselect_IMGs[4].src = "forum01.gif"
+select_IMGs[4].src = "forum02.gif"
+actual_IMGs[4].src = "forum03.gif"
+
+unselect_IMGs[5].src = "link01.gif"
+select_IMGs[5].src = "link02.gif"
+actual_IMGs[5].src = "link03.gif"
+
+unselect_IMGs[6].src = "email01.gif"
+select_IMGs[6].src = "email02.gif"
+actual_IMGs[6].src = "email03.gif"
+
+unselect_IMGs[7].src = "info01.gif"
+select_IMGs[7].src = "info02.gif"
+actual_IMGs[7].src = "info03.gif"
+
+function MENU_Choice(N) {
+
+var IMGName = "IMG" + N;
+
+document[IMGName].src = select_IMGs[N].src
+
+}
+
+
+
+function MENU_UnChoice(N) {
+
+window.status = "";
+
+var IMGName = "IMG" + N;
+
+document[IMGName].src = unselect_IMGs[N].src;
+
+}
+
+
+
+function MENU_Akt(N) {
+
+var IMGName = "IMG" + N;
+
+document[IMGName].src = actual_IMGs[N].src;
+
+}
+
+
+
+  </script>
+</head>
+  <body background="baloldal.jpg"
+ onload="window.status='Imi Honl@pja'; return true">
+                 
+<p><a href="http://www.extra.hu/imihonlapja/sajat.htm" target="mainpage"
+ onmouseover="MENU_Choice(0);self.status='Saját programjaim';return true"
+ onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(0);return true"><img
+ src="sajat01.gif" name="IMG0"
+ alt="Saj&aacute;t programok" border="0" align="middle">
+ </a><br>
+
+<a href="http://www.extra.hu/imihonlapja/letoltes.htm"
+ target="mainpage"
+ onmouseover="MENU_Choice(1);self.status='Letölthet&#337; programok';return true"
+ onmouseout="MENU_UnChoice(1);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(1);return true"><img
+ src="file:///C:/Every/Homepage/letoltes01.gif" name="IMG1"
+ alt="Let&ouml;lthet&#337; programok" border="0" align="middle">
+ </a><br>
+
+</a><a href="http://www.extra.hu/imihonlapja/desktop.htm"
+ target="mainpage"
+ onmouseover="MENU_Choice(2);self.status='Desktop kellékek';return true"
+ onmouseout="MENU_UnChoice(2);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(2);return true"><img
+ src="file:///C:/Every/Homepage/desktop01.gif" name="IMG2"
+ alt="Desktop kell&eacute;kek" border="0" align="middle">
+ </a><br>
+
+</a><a href="http://www.extra.hu/imihonlapja/teszt.htm"
+ target="mainpage"
+ onmouseover="MENU_Choice(3);self.status='Tesztkuk@c';return true"
+ onmouseout="MENU_UnChoice(3);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(3);return true"><img
+ src="file:///C:/Every/Homepage/teszt01.gif" name="IMG3"
+ alt="Tesztkuk@c" border="0" align="middle">
+ </a> <br>
+
+<a href="http://freeweb.hu/forum30/forum.php?f_owner=2700"
+ target="mainpage"
+ onmouseover="MENU_Choice(4);self.status='Fórum';return true"
+ onmouseout="MENU_UnChoice(4);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(4);return true"><img
+ src="file:///C:/Every/Homepage/forum01.gif" name="IMG4" alt="F&oacute;rum"
+ border="0" align="middle">
+ </a><br>
+
+<a href="http://www.extra.hu/imihonlapja/link.htm"
+ target="mainpage"
+ onmouseover="MENU_Choice(5);self.status='Linkgyûjtemény';return true"
+ onmouseout="MENU_UnChoice(5);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(5);return true"><img
+ src="file:///C:/Every/Homepage/link01.gif" name="IMG5"
+ alt="Linkgy&ucirc;jtem&eacute;ny" border="0" align="middle">
+ </a><br>
+
+<a href="email.htm"
+ target="mainpage"
+ onmouseover="MENU_Choice(6);self.status='E-mail küldése';return true"
+ onmouseout="MENU_UnChoice(6);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(6);return true"><img
+ src="email01.gif" name="IMG6"
+ alt="E-mail küldése" border="0" align="middle">
+ </a><br>
+
+<a href="http://www.extra.hu/imihonlapja/info.htm"
+ target="mainpage"
+ onmouseover="MENU_Choice(7);self.status='Honlap információ';return true"
+ onmouseout="MENU_UnChoice(7);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(7);return true"><img
+ src="file:///C:/Every/Homepage/info01.gif" name="IMG7"
+ alt="Honlap inform&aacute;ci&oacute;" border="0" align="middle">
+ </a><br>
+                    </p>
+   
+<p><b><font color="#ff0000"><font size="-1">&copy;Imi Honl@pja</font></font></b><a
+ href="http://www.extra.hu/imihonlapja/letoltes.html" target="mainpage"
+ onmouseover="MENU_Choice(0); self.status='Letölthetõ programok';return true"
+ onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(0);return true">       </a>  <br>
+<b><font color="#000000"><font size="-1">All rights reserved</font></font></b>
+<br>     </p>
+          <br>
+          <br>
+           <br>
+           
+</body>
+</html>

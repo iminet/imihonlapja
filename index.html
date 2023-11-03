@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+     
+  <meta http-equiv="Content-Language" content="hu">
+     
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+     
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1250">
+  <title>Imi Honl@pja</title>
+         
+  <script language="JavaScript1.2">	
+	var MNU_Cnt = 2	
+	
+	select_IMGs = new Array(MNU_Cnt-1);	
+	unselect_IMGs = new Array(MNU_Cnt-1);	
+	actual_IMGs = new Array(MNU_Cnt-1)	
+	
+	for (var i=0;i<MNU_Cnt;i++) {		
+		select_IMGs[i] = new Image;		
+		unselect_IMGs[i] = new Image;	  	
+		actual_IMGs[i] = new Image;		
+		}	
+
+	unselect_IMGs[0].src = "img_hun1.gif"	
+	select_IMGs[0].src = "img_hun2.gif"	
+	actual_IMGs[0].src = "img_hun2.gif"		
+	unselect_IMGs[1].src = "img_eng1.gif"	
+	select_IMGs[1].src = "img_eng2.gif"	
+	actual_IMGs[1].src = "img_eng2.gif"	
+
+	function MENU_Choice(N) {		
+		var IMGName = "IMG" + N;		
+		document[IMGName].src = select_IMGs[N].src		
+		}	
+	
+	function MENU_UnChoice(N) {		
+		window.status = "";		
+		var IMGName = "IMG" + N;		
+		document[IMGName].src = unselect_IMGs[N].src;		
+		}	
+
+	function MENU_Akt(N) {		
+		var IMGName = "IMG" + N;		
+		document[IMGName].src = actual_IMGs[N].src;		
+		}  
+    </script>
+</head>
+  <body background="alap-hatter.jpg">
+<p align="center"><img border="0" src="netovabb.gif" alt="Jó helyen jársz! Ez Imi Honl@pja..." width="407" height="60"><br>
+<br>
+<br>
+</p>
+
+
+
+<div align="center">    
+<center>    
+<table border="0" cellpadding="0" cellspacing="0"
+ style="border-collapse: collapse;" bordercolor="#111111" width="85%"
+ id="AutoNumber1">
+      <tbody>
+     <tr>
+        <td width="100%" background="alapkek.gif" height="60">          
+   
+      <p align="center"><img border="0" src="logo.gif" width="180"
+ height="55">
+       </p>
+       </td>
+      </tr>
+      <tr>
+        <td width="100%">              
+	<br>
+       </td>
+      </tr>
+      <tr>
+        <td width="100%"> </td>
+      </tr>
+      <tr>
+        <td width="100%" background="alapkek.gif">              
+      <p align="center"><font color="#ffffff"><b>Válassz egy nyelvet!<br>
+        Select a language, please!</b></font></p>
+               
+      <table cellpadding="2" cellspacing="2" border="0" width="50%"
+ align="center">
+         <tbody>
+           <tr>
+             <td valign="top" align="right"><a
+ href="/hun.htm"
+ onmouseover="MENU_Choice(0);self.status='Magyar verzió';return true"
+ onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(0);return true">
+             <img src="img_hun1.gif"
+ name="IMG0" alt="Magyar" border="0" align="middle" width="60" height="36">
+             <br>
+             <b><font color="#ffffff">Magyar</font></b></a><br>
+             </td>
+             <td valign="top"><a
+ href="/eng/index.html"
+ onmouseover="MENU_Choice(1);self.status='English version';return true"
+ onmouseout="MENU_UnChoice(1);self.status='Imi Honl@pja';return true"
+ onmousedown="MENU_Akt(1);return true">
+             <img src="img_eng1.gif"
+ name="IMG1" alt="English" border="0" align="middle" width="60" height="36">
+             <br>
+             <b><font color="#ffffff">English</font></b></a><br>
+             </td>
+           </tr>
+         
+        </tbody>       
+      </table>
+       <br>
+       </td>
+      </tr>
+    <tr>
+      <td valign="top"><b><font size="2"><font color="#990000"><br>
+      <br>
+<br>
+Imi Honl@pja</font><font color="#000066"> Copyright © Exament Software Ltd.
+1999-2003 All rights reserved!</font></font></b><br>
+      </td>
+    </tr>
+       
+  </tbody> 
+</table>
+    </center>
+  </div>
+   <b><font size="2"><font color="#000066"></font></font></b><br>
+</body>
+</html>
