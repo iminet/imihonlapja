@@ -23,12 +23,12 @@
 		actual_IMGs[i] = new Image;		
 		}	
 
-	unselect_IMGs[0].src = "img_hun1.gif"	
-	select_IMGs[0].src = "img_hun2.gif"	
-	actual_IMGs[0].src = "img_hun2.gif"		
-	unselect_IMGs[1].src = "img_eng1.gif"	
-	select_IMGs[1].src = "img_eng2.gif"	
-	actual_IMGs[1].src = "img_eng2.gif"	
+	unselect_IMGs[0].src = "/images/img_hun1.gif"	
+	select_IMGs[0].src = "/images/img_hun2.gif"	
+	actual_IMGs[0].src = "/images/img_hun2.gif"		
+	unselect_IMGs[1].src = "i/images/mg_eng1.gif"	
+	select_IMGs[1].src = "/images/img_eng2.gif"	
+	actual_IMGs[1].src = "/images/img_eng2.gif"	
 
 	function MENU_Choice(N) {		
 		var IMGName = "IMG" + N;		
@@ -47,8 +47,8 @@
 		}  
     </script>
 </head>
-  <body background="alap-hatter.jpg">
-<p align="center"><img border="0" src="netovabb.gif" alt="Jó helyen jársz! Ez Imi Honl@pja..." width="407" height="60"><br>
+  <body background="/images/alap-hatter.jpg">
+<p align="center"><img border="0" src="/images/netovabb.gif" alt="Jó helyen jársz! Ez Imi Honl@pja..." width="407" height="60"><br>
 <br>
 <br>
 </p>
@@ -91,7 +91,7 @@
  onmouseover="MENU_Choice(0);self.status='Magyar verzió';return true"
  onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
  onmousedown="MENU_Akt(0);return true">
-             <img src="img_hun1.gif"
+             <img src="/images/img_hun1.gif"
  name="IMG0" alt="Magyar" border="0" align="middle" width="60" height="36">
              <br>
              <b><font color="#ffffff">Magyar</font></b></a><br>
@@ -101,7 +101,7 @@
  onmouseover="MENU_Choice(1);self.status='English version';return true"
  onmouseout="MENU_UnChoice(1);self.status='Imi Honl@pja';return true"
  onmousedown="MENU_Akt(1);return true">
-             <img src="img_eng1.gif"
+             <img src="/images/img_eng1.gif"
  name="IMG1" alt="English" border="0" align="middle" width="60" height="36">
              <br>
              <b><font color="#ffffff">English</font></b></a><br>
