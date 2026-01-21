@@ -23,12 +23,12 @@
 		actual_IMGs[i] = new Image;		
 		}	
 
-	unselect_IMGs[0].src = "/images/img_hun1.gif"	
-	select_IMGs[0].src = "/images/img_hun2.gif"	
-	actual_IMGs[0].src = "/images/img_hun2.gif"		
-	unselect_IMGs[1].src = "i/images/mg_eng1.gif"	
-	select_IMGs[1].src = "/images/img_eng2.gif"	
-	actual_IMGs[1].src = "/images/img_eng2.gif"	
+	unselect_IMGs[0].src = "./images/img_hun1.gif"	
+	select_IMGs[0].src = "./images/img_hun2.gif"	
+	actual_IMGs[0].src = "./images/img_hun2.gif"		
+	unselect_IMGs[1].src = "./images/mg_eng1.gif"	
+	select_IMGs[1].src = "./images/img_eng2.gif"	
+	actual_IMGs[1].src = "./images/img_eng2.gif"	
 
 	function MENU_Choice(N) {		
 		var IMGName = "IMG" + N;		
@@ -47,8 +47,8 @@
 		}  
     </script>
 </head>
-  <body background="/images/alap-hatter.jpg">
-<p align="center"><img border="0" src="/images/netovabb.gif" alt="Jó helyen jársz! Ez Imi Honl@pja..." width="407" height="60"><br>
+  <body background="./images/alap-hatter.jpg">
+<p align="center"><img border="0" src="./images/netovabb.gif" alt="Jó helyen jársz! Ez Imi Honl@pja..." width="407" height="60"><br>
 <br>
 <br>
 </p>
@@ -62,9 +62,9 @@
  id="AutoNumber1">
       <tbody>
      <tr>
-        <td width="100%" background="alapkek.gif" height="60">          
+        <td width="100%" background="./images/alapkek.gif" height="60">          
    
-      <p align="center"><img border="0" src="/images/logo.gif" width="180"
+      <p align="center"><img border="0" src="./images/logo.gif" width="180"
  height="55">
        </p>
        </td>
@@ -78,7 +78,7 @@
         <td width="100%"> </td>
       </tr>
       <tr>
-        <td width="100%" background="alapkek.gif">              
+        <td width="100%" background="./images/alapkek.gif">              
       <p align="center"><font color="#ffffff"><b>Válassz egy nyelvet!<br>
         Select a language, please!</b></font></p>
                
@@ -87,21 +87,21 @@
          <tbody>
            <tr>
              <td valign="top" align="right"><a
- href="/hun.htm"
+ href="./hun.htm"
  onmouseover="MENU_Choice(0);self.status='Magyar verzió';return true"
  onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
  onmousedown="MENU_Akt(0);return true">
-             <img src="/images/img_hun1.gif"
+             <img src="./images/img_hun1.gif"
  name="IMG0" alt="Magyar" border="0" align="middle" width="60" height="36">
              <br>
              <b><font color="#ffffff">Magyar</font></b></a><br>
              </td>
              <td valign="top"><a
- href="/eng/index.html"
+ href="./eng/index.html"
  onmouseover="MENU_Choice(1);self.status='English version';return true"
  onmouseout="MENU_UnChoice(1);self.status='Imi Honl@pja';return true"
  onmousedown="MENU_Akt(1);return true">
-             <img src="/images/img_eng1.gif"
+             <img src="./images/img_eng1.gif"
  name="IMG1" alt="English" border="0" align="middle" width="60" height="36">
              <br>
              <b><font color="#ffffff">English</font></b></a><br>
