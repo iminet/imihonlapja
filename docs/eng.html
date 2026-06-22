@@ -24,9 +24,9 @@
 	  actual_IMGs[i] = new Image;
 	}
 
-	unselect_IMGs[0].src = "back01.gif"
-	select_IMGs[0].src = "back02.gif"
-	actual_IMGs[0].src = "back03.gif"
+	unselect_IMGs[0].src = "./images/back01.gif"
+	select_IMGs[0].src = "./images/back02.gif"
+	actual_IMGs[0].src = "./images/back03.gif"
 
 	function MENU_Choice(N) {
 	var IMGName = "IMG" + N;
@@ -46,7 +46,7 @@
 	</script>
 </head>
  <body text="#000000" bgcolor="#ffffff" link="#0000ee" vlink="#551a8b"
- alink="#ff0000" background="http://imihonlapja.uw.hu/alap-hatter.jpg"
+ alink="#ff0000" background="./images/alap-hatter.jpg"
  onload="window.status='Imi Honl@pja'; return true">
       &nbsp;      
 <center>     
@@ -54,9 +54,9 @@
  height="60">
       <tbody>
          <tr>
-      <td valign="middle" background="http://imihonlapja.uw.hu/alapkek.gif">                     
+      <td valign="middle" background="./images/alapkek.gif">                     
               
-      <center><img src="logo_eng.gif" border="0" height="56"
+      <center><img src="./images/logo.gif" border="0" height="56"
  width="215" alt="Logo">
            </center>
       </td>
@@ -88,10 +88,10 @@ construction! Try it later.</font><br>
 <p><b><font color="#ff0000"><font size="-1">&copy;Imi Honl@pja</font></font></b>
    <br>
      <b><font color="#000000"><font size="-1">All rights reserved</font></font></b><a
- href="http://imihonlapja.uw.hu/index.html"
+ href="./index.html"
  onmouseover="MENU_Choice(0); self.status='Back to the main page';return true"
  onmouseout="MENU_UnChoice(0);self.status='Imi Honl@pja';return true"
- onmousedown="MENU_Akt(0);return true"><img src="back01.gif" name="IMG0"
+ onmousedown="MENU_Akt(0);return true"><img src="./images/back01.gif" name="IMG0"
  border="0" width="126" height="21">
      </a> </p>
      <br>
